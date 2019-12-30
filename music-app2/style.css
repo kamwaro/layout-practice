@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+html, body, main{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+
+
+}
+
+img{
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a:hover{
+    border-bottom:2px solid #fff;
+    font-size: 1.7em;
+    padding-bottom: 25px;
+    margin-left: -10px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.main-view{
+    flex: 1 1 0;
+}
+
+aside{
+    flex: 0 0 40px;
+    display: flex;
+    background-color: blueviolet;
+    justify-content: center;
+   
+}
+    
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(5,4,30); 
+    flex: 1;
+}
+
+
+
+
+.main-view{
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-radius: 2px;
+}
+
+.music-head{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    background: url(images/monochrome-surface-3377414.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: left;
+    background-blend-mode: multiply;
+    background-color: rgb(68, 67, 68);
+    color: rgb(214, 211, 211);
+    font-style: italic;
+    font-size: 1.4rem;
+}
+
+.music-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+   
+}
+
+.header-details h3 span{
+    color: rgb(233, 220, 220);
+}
+
+.header-controls{
+    display: flex;
+
+}
+
+.header-details h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+
+}
+
+.header-details p{
+    font-family: '' ;
+    font-weight: 100;
+}
+
+.header-controls a i{
+    color: #fff;
+}
+
+.header-controls div:nth-child(2){
+    padding: 0 50px;
+}
+
+.music-playlist{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1 0 0;
+    overflow: hidden;
+
+}
+
+.music-playlist li p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: small;
+    font-weight: bolder;
+}
+
+
+
+.music-playlist li{
+    display: flex;
+    flex: 1 0 0;
+    align-items: center;
+}
+
+
+.music-playlist li p{
+    flex: 0 0 25%;
+    padding: 10px 5px;
+}
+
+.music-playlist li p:nth-child(4){
+    border: 3px solid grey;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.music-playlist li:nth-child(2n){
+    background-color: rgb(223, 223, 223);
+    color: #000;
+}
+
+
+
+.music-playlist li p.title::first-letter{
+    border-radius: 60%;
+    border: 2px solid white;
+    font-size: 1.3em;
+    color: white;
+    padding:8px 10px;
+    margin-right: 5px;
+    
+}
+
+.music-playlist li p#title2::first-letter{
+    color: #000;
+    border-radius: 60%;
+    border: 2px solid #000;
+    padding:8px 10px;
+    margin-right: 5px;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    flex: 0 0 90px;
+    background-color: rgb(5,4,30); 
+
+}
+
+.current-song{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.current-song ul li:first-child{
+    margin-bottom: 10px;
+    
+}
+.current-song ul li{
+    padding-left: 4px;
+}
+
+.footer-controls{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+   
+}
+

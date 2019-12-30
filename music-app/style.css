@@ -1,0 +1,126 @@
+html,body{
+    height: 100%;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0;
+    font-family: sans-serif;
+    color: #222;
+    font-size: 0.9em;
+}
+
+main{
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-start;
+     
+}
+
+
+
+aside{
+   display: flex;
+   flex: 0 0 40px;
+   flex-direction: column;
+   justify-content: space-around;
+   background-color: #f2f2f2;
+  
+   align-items: center;
+}
+
+aside i:hover{
+
+    border: 3px solid greenyellow;
+    border-radius: 5px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.music-head{
+    display: flex;
+}
+.catty-music{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
+
+
+.catty-music div:nth-child(2) i.fa{
+    padding: 0 0.7em;
+
+}
+
+.music-list{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-top: 50px;
+}
+
+.music-list li{
+    display: flex;
+    justify-content: space-between;
+    flex:1 1 auto;
+   
+}
+
+.music-list li p{
+    flex: 0 0 25%;  /* The secret sauce*/ /* Dont grow or shrink but each paragraph should take 25% of the available space*/
+   
+    margin-left: 2px;
+}
+
+.music-list li:nth-child(2n) {
+    background-color: rgb(241, 237, 237) ;
+
+}
+
+footer{
+    display: flex;
+    color: #fff;
+    flex: 0 0 90px;
+    
+    /* background-color: rgba(61, 100, 158, 0.9); */
+}
+
+
+.current-song{
+    display: flex;
+    flex: 0 0 60%;
+    background-color: rgba(61, 100, 158, 0.9);
+
+}
+.current-song div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.music-controls{
+    display: flex;
+    flex: 0 0 40%;
+    align-items: center;
+    background-color: rgba(61, 100, 158, 0.9);
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.music-controls li {
+   
+    list-style: none;
+}
