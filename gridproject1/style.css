@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh 50vh ;
+}
+
+div{
+    text-align: center;
+    color: rgb(247, 247, 247);
+    padding-top: 10px;
+}
+
+.tweets{
+    background-color: aqua;
+    display: flex;
+    grid-column:2/3;
+    grid-row: 2/3;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.replies{
+    background-color: chocolate;
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-items: center;
+    justify-content: center;
+}
+
+.search{
+    background-color: darkslategrey;
+    display: flex;
+    grid-column:1/2;
+    grid-row: 2/3;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages{
+    background-color: darkturquoise;
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+ @media screen and (max-width: 1024px){
+    .container1{
+        display: grid;
+        grid-template-columns: 100vw ;
+        grid-template-rows: 25vh 25vh 25vh 25vh;
+    }
+
+    .tweets{
+        background-color: aqua;
+        display: flex;
+        grid-column:1;
+        grid-row: 4/5;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    
+    .replies{
+        background-color: chocolate;
+        display: flex;
+        grid-column: 1;
+        grid-row: 3/4;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .search{
+        background-color: darkslategrey;
+        display: flex;
+        grid-column:1/2;
+        grid-row: 1/2;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .messages{
+        background-color: darkturquoise;
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+
+
+} 
