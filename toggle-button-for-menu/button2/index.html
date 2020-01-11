@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Button2</title>
+</head>
+<body>
+    <div class="toggle"></div>
+    <script>
+        var button = document.querySelector('.toggle').addEventListener('click', rotate);
+
+        function rotate(e){
+            e.preventDefault();
+            console.log('Howdie!!');
+            button.classList.add('active');
+        }
+    </script>
+</body>
+</html>

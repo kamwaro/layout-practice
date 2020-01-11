@@ -1,0 +1,55 @@
+html, body, main{
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+
+main{
+    display: flex;
+   
+}
+
+aside{
+    flex: 1 1 auto;
+}
+
+header{
+    background-color: rgb(70, 168, 233);
+    flex: 1 1 300px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+aside{
+    background-color: #ff7f50;
+    text-align: center;
+    flex: 1 0 auto;
+    text-align: center;
+
+}
+
+div{
+    background-color: greenyellow;
+    flex: 3 0 auto;
+    text-align: center;
+    
+}
+
+
+footer{
+    background-color: purple;
+    flex: 0 0 80px;
+    text-align: center;
+    align-items: center;
+    padding-top: 100px;
+}

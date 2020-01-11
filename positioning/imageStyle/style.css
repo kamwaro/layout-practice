@@ -1,0 +1,45 @@
+.me{
+    width: 80vw;
+    margin: 20px auto;
+    background: lightblue;
+    position: relative;
+    line-height: 1.6;
+    font-family: monospace;
+}
+
+.me img{
+    padding:10px;
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    border-radius: 20px;
+}
+
+.me p{
+    padding: 15px;
+}
+
+.me span{
+    display: inline;
+  margin-left: 90px;
+   color: #000;
+}
+
+@media (max-width:700px){
+.me img{
+    float:left;
+    position: static;
+    padding: 10px;
+};
+
+.me span{
+    display: inline;
+  margin-left: 90px;
+   color: #000;
+}
+
+.me{
+    background-color: lightcoral;
+}
+
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0; 
+    transition: all 0.5s ease-in-out;
+}
+
+nav{
+    background: linear-gradient(180deg, rgb(146, 142, 142), rgb(255, 255, 255));
+    font-family: monospace;
+    font-size: large;
+    font-weight: lighter;
+
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+    text-align: center;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+li > ul{
+    margin-top: 1em;
+    list-style: none;
+    transition: all 0.5s ease;
+    width: 150%;
+    
+    visibility: hidden ;
+    display: none;
+    background: linear-gradient(180deg, rgb(146, 142, 142), rgb(255, 255, 255)); ;
+}
+
+li > ul li{
+    padding-top: 10px;
+}
+
+li{
+     padding-right: 10px; 
+     padding-bottom: 10px;
+}
+
+.main-nav li:hover ul{
+    visibility: visible;
+    display: block;
+}
+
+.main-nav li ul{
+    transition: all 0.5s ease;
+
+}
+
+
+.main-nav li ul li:hover, 
+.main-nav li ul li:hover a {
+    background: darkblue;
+    color: #fff;
+
+}
+

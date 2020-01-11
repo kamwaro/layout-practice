@@ -1,7 +1,10 @@
+:root{
+    --main-color: linear-gradient(45deg, rgb(24, 36, 77), rgb(154, 174, 211));
+}
 
 
 .container{
-    background-image: linear-gradient(45deg, rgb(24, 36, 77), rgb(154, 174, 211));
+    background-image: var(--main-color);
     font-family: monospace;
 }
 

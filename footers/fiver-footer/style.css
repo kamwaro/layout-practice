@@ -90,3 +90,12 @@ hr{
 
 }
 
+footer li a {
+    text-decoration: none;
+    color: rgb(105, 104, 104);
+}
+
+footer li a:hover{
+    text-decoration: underline;
+}
+

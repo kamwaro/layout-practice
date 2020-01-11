@@ -1,0 +1,34 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100px 100px 100px;
+    grid-gap:10px;
+
+    justify-items: stretch;
+
+}
+
+.a,.b,.c,.d,.e,.f,.g,.h,.i{
+    border: 2px solid #000;
+}
+.c {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: aqua;
+}
+
+.e {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: rgb(64, 82, 167);
+}
+
+.b, .j {
+    order: 2;
+    background-color: rgb(38, 110, 56);
+}
+
+.a, .i {
+    order: 3;
+    background-color: rgb(155, 63, 30);
+}
