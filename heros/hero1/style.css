@@ -1,0 +1,87 @@
+/* General style resets */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Typography */
+body{
+    font-family: 'Satisfy', cursive;
+
+}
+/* Header styles */
+.header{
+    background: url(./pexels-photo-270404.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 80vh;
+    background-blend-mode: multiply;
+    background-color: rgb(47, 47, 82);
+
+    color: #fff;
+}
+
+/* Navbar styles */
+.nav{
+    max-width: 80%;
+    margin: 0 auto;
+    padding-top: 70px;
+    text-transform: uppercase;
+}
+
+.nav--list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.nav--list li:nth-child(1){
+    margin-right: auto;
+}
+
+.nav--list li:nth-child(1) img{
+    border-radius: 50%;
+}
+
+
+.nav--list li{
+    padding-left: 50px;
+}
+
+.nav--list li:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.header-title{
+    text-align: center;
+    font-size: 3.4em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header--title{
+  
+    padding: 100px 250px 30px;
+    font-weight: lighter;  
+}
+
+section{
+    width: 90vw;
+    height: 10px;
+}
+section span::after{
+    content: '';
+    display: inline-block;
+    width: 100vw;
+    padding: 0px 10px;
+    height: 2px;
+    background-color: #000;
+}
