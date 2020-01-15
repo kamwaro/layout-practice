@@ -13,20 +13,22 @@ body{
 }
 /* Header styles */
 .header{
+    height: 70vh;
+
     background: url(./pexels-photo-270404.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 80vh;
     background-blend-mode: multiply;
     background-color: rgb(47, 47, 82);
 
     color: #fff;
+
+    position: relative;
 }
 
 /* Navbar styles */
 .nav{
-    max-width: 80%;
     margin: 0 auto;
     padding-top: 70px;
     text-transform: uppercase;
@@ -61,26 +63,27 @@ body{
 .header-title{
     text-align: center;
     font-size: 3.4em;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    position: absolute;
+    bottom: 30px;
+
 }
 
 .header--title{
   
-    padding: 100px 250px 30px;
+    /* padding: 100px 250px 30px; */
     font-weight: lighter;  
 }
 
 section{
-    width: 90vw;
     height: 10px;
 }
 section span::after{
     content: '';
     display: inline-block;
-    width: 100vw;
     padding: 0px 10px;
     height: 2px;
     background-color: #000;
