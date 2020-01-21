@@ -77,6 +77,7 @@
 .navDropDown{
 text-align: left;
 padding: 5px 30px 30px;
+
 }
 
 .dropDownItem{
@@ -215,12 +216,14 @@ padding: 5px 30px 30px;
 /* footer styles */
 
 .footer{
-    background-color:  rgb(198, 226, 243)  ;
+    background-image: linear-gradient(to bottom, rgb(188, 248, 220), #fff )  ;
+    
 }
 
 .footer-head{
     margin: 20px 10px;
     padding: 20px 10px;
+    font-size: 1.2rem;
 }
 
 .footer-head-title{
@@ -269,6 +272,9 @@ padding: 5px 30px 30px;
     color: #fff;
 }
 
+.footer-head-title{
+    padding: 15px 10%;
+}
 
 .footer-end{
     background-image: linear-gradient(to bottom, rgb(17, 120, 155), rgb(5, 51, 66));
@@ -303,11 +309,82 @@ padding: 5px 30px 30px;
     margin: 10px;
 }
 
+/* Media queries: Large screens */
+
 @media (min-width:550px){
+    .navDropDown{
+        display: none;
+    }
+    
+    .updateSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0 10%;
+    }
+
+    .update1{
+            flex: 4;
+    }
+
+    .update2{
+        text-align: center;
+        flex: 1;        
+    }
+
+    .heroSection{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+ 
+
+     .main-hero{
+        padding: 0 10%;
+    } 
+
+    .secondaryHero{
+        padding: 0 10%;
+    }
+
     .feed{
         display: grid;
-        grid-gap: 10px;
-        grid-template-columns: repeat(auto-fit,minmax(400px, 1fr));
+        grid-column-gap: 5px;
+        grid-row-gap: 10px;
+        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
     
+    }
+
+    .secondaryHero{
+        max-width: 95%;
+        margin: 0px auto;
+    }
+
+    .article-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        list-style-type: none;
+    }
+
+    .article-list-item:last-child{
+            grid-column: 2;
+            grid-row: 3;
+    }
+
+    .footer-head{
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.6rem;
+        padding: 0 10%;
+    }
+
+    .footer-head-title{
+        padding: 15px 10%;
+        font-size: 2.5rem;
+    }
+
+    .footer-head-details{
+            padding-right: 100px;
     }
 }
